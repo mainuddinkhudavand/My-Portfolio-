@@ -30,9 +30,7 @@ import {
   Globe,
   Star,
   BarChart3,
-  Monitor,
-  Maximize2,
-  Sparkle
+  Monitor
 } from 'lucide-react';
 
 /* Custom Social SVG Components */
@@ -49,23 +47,22 @@ const Linkedin = ({ className = "w-4 h-4" }) => (
 );
 
 /* ==========================================================================
-   PORTFOLIO CONFIGURATION (CUSTOMIZE ALL CONTENT HERE)
+   PORTFOLIO CONFIGURATION (AUTHENTIC HUMAN DEVELOPER CONTENT)
    ========================================================================== */
 export const PORTFOLIO_CONFIG = {
   personal: {
     name: "Mainuddin Khudavand",
     shortName: "Mainuddin.K",
     portraitUrl: "/mainuddin_portrait.jpg",
-    avatar3dUrl: "/mainuddin_3d_avatar.jpg",
-    roleTitle: "AI/ML Engineer & Full Stack Developer (MERN)",
-    taglinePrefix: "Building ",
+    roleTitle: "Full-Stack Developer & AI/ML Engineer",
+    taglinePrefix: "I build ",
     taglines: [
-      "Agentic AI & LLM Pipelines",
-      "Scalable Full-Stack MERN Apps",
-      "Deep Learning & Computer Vision",
+      "Agentic AI & LLM Applications",
+      "Full-Stack MERN Web Systems",
+      "Computer Vision & Deep Learning Models",
       "Patented Digital Governance Platforms"
     ],
-    valueProposition: "Engineered at the intersection of Deep Learning and Full-Stack MERN Architecture — turning cutting-edge ML research into robust, high-impact products.",
+    valueProposition: "I'm a developer passionate about building clean full-stack web applications and practical machine learning systems that solve real human problems.",
     location: "Karnataka, India (Open to Remote & Relocation)",
     resumeUrl: "/Mainuddin_Khudavand_Resume.pdf",
     email: "mainuddinkhudavand@gmail.com",
@@ -76,15 +73,15 @@ export const PORTFOLIO_CONFIG = {
   
   about: {
     bio: [
-      "I am an AI/ML Engineer and Full Stack MERN Developer pursuing my B.E. in Computer Science & Engineering with an 8.5 CGPA.",
-      "My work focuses on designing intelligent, autonomous agents and high-throughput web systems — spanning from LLM-powered RAG applications to multi-role enterprise web platforms.",
-      "I hold a published patent for a digital governance platform and have delivered multiple production-ready systems combining facial recognition, voice verification, and computer vision."
+      "I'm a Computer Science & Engineering student at Tontadarya College of Engineering (Gadag) maintaining an 8.5 CGPA while actively building production-ready web and AI software.",
+      "My work spans full-stack web development using the MERN stack, PyTorch deep learning pipelines, and LLM agentic workflows. I love taking complex technical ideas and turning them into fast, intuitive applications.",
+      "I filed a published Indian patent for a multi-role digital governance platform aimed at rural administration, and I've built live apps combining face recognition, voice verification, and posture tracking."
     ],
     stats: [
-      { id: "cgpa", label: "B.E. CSE CGPA", value: "8.5", detail: "Tontadarya College of Engg", iconName: "GraduationCap" },
-      { id: "patent", label: "Patent Published", value: "1", detail: "App #202641040564", iconName: "FileCode" },
-      { id: "projects", label: "Deployed Projects", value: "15+", detail: "Live Production Demos", iconName: "Sparkles" },
-      { id: "tech", label: "Tech Stack Tools", value: "15+", detail: "PyTorch, React, Node, SQL", iconName: "Cpu" }
+      { id: "cgpa", label: "Engineering CGPA", value: "8.5", detail: "Tontadarya College of Engg", iconName: "GraduationCap" },
+      { id: "patent", label: "Govt Patent Filed", value: "1", detail: "App #202641040564", iconName: "FileCode" },
+      { id: "projects", label: "Deployed Projects", value: "15+", detail: "Live Web & AI Applications", iconName: "Sparkles" },
+      { id: "tech", label: "Core Tech Stack", value: "15+", detail: "React, Node, PyTorch, SQL", iconName: "Cpu" }
     ]
   },
 
@@ -112,7 +109,7 @@ export const PORTFOLIO_CONFIG = {
           { name: "OpenAI & Groq LLMs", level: "Advanced", badge: "LLM API" },
           { name: "Scikit-Learn (SVM, Reg)", level: "Advanced", badge: "Classic ML" },
           { name: "OpenCV & MediaPipe", level: "Advanced", badge: "Vision" },
-          { name: "Resemblyzer & Audio Embeddings", level: "Intermediate", badge: "Voice AI" }
+          { name: "Resemblyzer Voice Embeddings", level: "Intermediate", badge: "Voice AI" }
         ]
       },
       {
@@ -125,18 +122,18 @@ export const PORTFOLIO_CONFIG = {
           { name: "REST APIs & JWT Auth", level: "Advanced", badge: "Security" },
           { name: "Supabase & PostgreSQL", level: "Intermediate", badge: "BaaS" },
           { name: "Flask & Streamlit", level: "Advanced", badge: "Python Web" },
-          { name: "SMTP & Notification Logic", level: "Advanced", badge: "Backend" }
+          { name: "Nodemailer & SMTP", level: "Advanced", badge: "Backend" }
         ]
       },
       {
         id: "devops",
-        name: "DevOps & Tools",
+        name: "Tools & Deployment",
         iconName: "Terminal",
         items: [
           { name: "Git & GitHub", level: "Advanced", badge: "VCS" },
-          { name: "Docker & Containers", level: "Intermediate", badge: "DevOps" },
-          { name: "Kubernetes Fundamentals", level: "Conceptual", badge: "Cloud" },
+          { name: "Docker", level: "Intermediate", badge: "DevOps" },
           { name: "Render & Vercel", level: "Advanced", badge: "Deployment" },
+          { name: "Postman API Testing", level: "Advanced", badge: "Tooling" },
           { name: "Jest Unit Testing", level: "Intermediate", badge: "Testing" }
         ]
       }
@@ -148,9 +145,9 @@ export const PORTFOLIO_CONFIG = {
       id: "digital-governance",
       title: "Empowering Villages Through Digital Governance",
       subtitle: "Multi-Role MERN Grievance & Administrative Platform",
-      description: "A 5-role governance ecosystem (Citizens, Field Workers, Officials, Managers, Admins) enabling complaint tracking, automated escalation, and multi-role dashboards.",
-      impact: "Patent Published (#202641040564) • 5 Administrative Dashboards • SMTP Alert Engine",
-      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "SMTP", "REST APIs"],
+      description: "A comprehensive 5-role governance web app (Citizens, Field Workers, Officials, Managers, Admins) for complaint tracking, automated escalation, and real-time administrative dashboards.",
+      impact: "Patent Published (#202641040564) • 5 Role Dashboards • Automated Email Alerts",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Nodemailer"],
       liveDemo: "https://empowering-villages-through-digital-6r80.onrender.com",
       github: "https://github.com/mainuddinkhudavand/digital-governance-mern",
       category: "Full Stack MERN",
@@ -160,25 +157,25 @@ export const PORTFOLIO_CONFIG = {
       id: "ai-attendance",
       title: "Intelligent AI Attendance System",
       subtitle: "Contactless Dual-Factor Face & Voice Verification",
-      description: "AI-driven dual-factor attendance platform using facial recognition (dlib & SVM classifier) combined with Resemblyzer voice speaker verification.",
-      impact: "Dual-Factor Biometric Auth • QR Enrollment • Teacher & Student Portals • Supabase Backend",
-      tags: ["Python", "Flask", "Streamlit", "Supabase", "Scikit-Learn", "dlib", "Resemblyzer"],
+      description: "AI-driven attendance platform featuring facial recognition (dlib & SVM classifier) combined with Resemblyzer voice speaker verification to prevent proxy attendance.",
+      impact: "Dual-Factor Biometric Security • QR Registration • Student & Teacher Dashboards",
+      tags: ["Python", "Flask", "Streamlit", "Supabase", "Scikit-Learn", "OpenCV", "Resemblyzer"],
       liveDemo: "https://ai-attendance-project-landing-main1-1.onrender.com",
       github: "https://github.com/mainuddinkhudavand/ai-attendance-system",
       category: "AI & Biometrics",
-      badge: "Dual-Factor Auth"
+      badge: "Dual Biometric Auth"
     },
     {
       id: "ai-gym-trainer",
       title: "Real-Time AI Gym Trainer",
       subtitle: "Computer Vision Posture Detection & Rep Counter",
-      description: "Interactive fitness assistant leveraging MediaPipe pose landmarks and Groq LLMs to deliver real-time corrective feedback and automated rep counting.",
-      impact: "Sub-100ms Posture Validation • Real-Time Voice Audio • WebRTC Stream Processing",
+      description: "An interactive posture assistant using MediaPipe body landmarks and Groq LLMs to analyze workout form in real-time and provide immediate voice corrections.",
+      impact: "Sub-100ms Form Analysis • Voice Feedback • WebRTC Real-Time Stream",
       tags: ["Python", "Streamlit", "WebRTC", "MediaPipe", "OpenCV", "Groq LLM", "gTTS"],
       liveDemo: "https://ai-gym-trainer-landing-page.onrender.com",
       github: "https://github.com/mainuddinkhudavand/realtime-ai-gym-trainer",
       category: "Vision & LLMs",
-      badge: "Sub-100ms Vision"
+      badge: "Real-Time Vision"
     }
   ],
 
@@ -188,21 +185,21 @@ export const PORTFOLIO_CONFIG = {
       role: "Founder & Lead Developer",
       organization: "Empowering Residency (MSME Registered Enterprise)",
       location: "Udyam Reg. UDYAM-KR-14-0034950 • Govt. of India",
-      description: "Leading digital service solutions and software architecture for registered micro-enterprise initiatives, empowering rural governance and service automation."
+      description: "Architecting web platforms and digital tools for registered micro-enterprise initiatives focused on automating service delivery and village administrative workflows."
     },
     {
       period: "Sep 2023 – July 2027",
       role: "B.E. in Computer Science and Engineering",
       organization: "Tontadarya College of Engineering",
       location: "Gadag, Karnataka • CGPA: 8.5",
-      description: "Focusing on Deep Learning, Agentic AI Systems, Operating Systems, Computer Networks, and DBMS. Active participant in state-level technical competitions."
+      description: "Studying Core Computer Science including Deep Learning, Operating Systems, DBMS, Networking, and Data Structures. Active in state technical hackathons."
     },
     {
       period: "2025 – 2026",
-      role: "Full Stack & AI/ML Certifications & Finalist",
-      organization: "Apna College & Navitantriks State Level Competition",
+      role: "Navitantriks Finalist & Web/AI Certifications",
+      organization: "State-Level Technical Competition & Apna College",
       location: "Karnataka, India",
-      description: "Selected as Navitantriks 2026 State-Level Finalist for Digital Governance research. Earned certifications in Full Stack Web Development (2025) and AI/ML (2026)."
+      description: "Selected as Navitantriks 2026 State-Level Finalist for Digital Governance research. Earned certifications in Full Stack Web Development (2025) and Machine Learning (2026)."
     }
   ],
 
@@ -216,7 +213,7 @@ export const PORTFOLIO_CONFIG = {
 /* ==========================================================================
    TYPEWRITER ANIMATION HOOK
    ========================================================================== */
-function useTypewriter(words, speed = 80, delay = 2000) {
+function useTypewriter(words, speed = 75, delay = 2200) {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
@@ -246,7 +243,7 @@ function useTypewriter(words, speed = 80, delay = 2000) {
 }
 
 /* ==========================================================================
-   3D TILT CARD COMPONENT
+   3D TILT CARD COMPONENT (WITH MOBILE TOUCH DISABLE)
    ========================================================================== */
 const TiltCard3D = ({ children, className = "", perspective = 1000 }) => {
   const cardRef = useRef(null);
@@ -257,7 +254,10 @@ const TiltCard3D = ({ children, className = "", perspective = 1000 }) => {
   const [glare, setGlare] = useState({ opacity: 0, x: 50, y: 50 });
 
   const handleMouseMove = (e) => {
+    // Disable heavy tilt on mobile touch devices
+    if (window.innerWidth < 768) return;
     if (!cardRef.current) return;
+    
     const rect = cardRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -265,18 +265,18 @@ const TiltCard3D = ({ children, className = "", perspective = 1000 }) => {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = ((y - centerY) / centerY) * -14;
-    const rotateY = ((x - centerX) / centerX) * 14;
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
 
     const glareX = (x / rect.width) * 100;
     const glareY = (y / rect.height) * 100;
 
     setStyle({
-      transform: `perspective(${perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`,
+      transform: `perspective(${perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`,
       transition: 'transform 0.1s ease-out',
     });
 
-    setGlare({ opacity: 0.35, x: glareX, y: glareY });
+    setGlare({ opacity: 0.3, x: glareX, y: glareY });
   };
 
   const handleMouseLeave = () => {
@@ -299,7 +299,7 @@ const TiltCard3D = ({ children, className = "", perspective = 1000 }) => {
         className="pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-300 -z-0"
         style={{
           opacity: glare.opacity,
-          background: `radial-gradient(circle at ${glare.x}% ${glare.y}%, rgba(255, 255, 255, 0.35) 0%, rgba(16, 185, 129, 0.2) 35%, transparent 75%)`,
+          background: `radial-gradient(circle at ${glare.x}% ${glare.y}%, rgba(255, 255, 255, 0.3) 0%, rgba(16, 185, 129, 0.15) 35%, transparent 75%)`,
         }}
       />
       <div className="relative z-10 preserve-3d h-full">{children}</div>
@@ -336,7 +336,7 @@ const ThreeCanvasBackground = () => {
       color: 0x10b981,
       wireframe: true,
       transparent: true,
-      opacity: 0.18,
+      opacity: 0.15,
     });
     const icosahedron = new THREE.Mesh(geometry, wireframeMaterial);
     scene.add(icosahedron);
@@ -346,12 +346,12 @@ const ThreeCanvasBackground = () => {
       color: 0x06b6d4,
       wireframe: true,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.25,
     });
     const torus = new THREE.Mesh(torusGeo, torusMat);
     scene.add(torus);
 
-    const particlesCount = 400;
+    const particlesCount = window.innerWidth < 768 ? 200 : 400;
     const posArray = new Float32Array(particlesCount * 3);
 
     for (let i = 0; i < particlesCount * 3; i++) {
@@ -368,7 +368,7 @@ const ThreeCanvasBackground = () => {
       size: 0.14,
       color: 0x34d399,
       transparent: true,
-      opacity: 0.75,
+      opacity: 0.7,
     });
 
     const particlesMesh = new THREE.Points(particlesGeo, particlesMat);
@@ -405,19 +405,19 @@ const ThreeCanvasBackground = () => {
 
       const elapsedTime = clock.getElapsedTime();
 
-      icosahedron.rotation.x = elapsedTime * 0.05;
-      icosahedron.rotation.y = elapsedTime * 0.08;
+      icosahedron.rotation.x = elapsedTime * 0.04;
+      icosahedron.rotation.y = elapsedTime * 0.06;
 
-      torus.rotation.x = elapsedTime * -0.07;
-      torus.rotation.y = elapsedTime * 0.1;
+      torus.rotation.x = elapsedTime * -0.05;
+      torus.rotation.y = elapsedTime * 0.08;
 
-      particlesMesh.rotation.y = elapsedTime * 0.02;
+      particlesMesh.rotation.y = elapsedTime * 0.015;
 
-      targetX = mouseX * 0.001;
-      targetY = mouseY * 0.001;
+      targetX = mouseX * 0.0008;
+      targetY = mouseY * 0.0008;
 
-      scene.rotation.y += (targetX - scene.rotation.y) * 0.05;
-      scene.rotation.x += (targetY - scene.rotation.x) * 0.05;
+      scene.rotation.y += (targetX - scene.rotation.y) * 0.04;
+      scene.rotation.x += (targetY - scene.rotation.x) * 0.04;
 
       renderer.render(scene, camera);
     };
@@ -476,7 +476,7 @@ export default function App() {
     { id: 'experience', label: 'Experience' },
     { id: 'contact', label: 'Contact' },
   ];
-  
+
   // Contact form state
   const [formData, setFormData] = useState({
     name: '',
@@ -498,7 +498,7 @@ export default function App() {
   useEffect(() => {
     const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'];
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 200;
+      const scrollPosition = window.scrollY + 180;
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
@@ -575,7 +575,7 @@ export default function App() {
           {
             from_name: formData.name,
             from_email: formData.email,
-            subject: formData.subject || 'Portfolio Inquiry',
+            subject: formData.subject || 'Portfolio Contact',
             message: formData.message,
             to_name: PORTFOLIO_CONFIG.personal.name
           },
@@ -596,7 +596,7 @@ export default function App() {
       }
     }
 
-    const mailtoSubject = encodeURIComponent(formData.subject || `Portfolio Contact from ${formData.name}`);
+    const mailtoSubject = encodeURIComponent(formData.subject || `Portfolio Message from ${formData.name}`);
     const mailtoBody = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
@@ -619,13 +619,13 @@ export default function App() {
       <ThreeCanvasBackground />
 
       {/* Ambient Gradient Flares */}
-      <div className="fixed top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
-      <div className="fixed bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '4s' }}></div>
+      <div className="fixed top-0 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+      <div className="fixed bottom-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '4s' }}></div>
 
       {/* ===================================================================
           1. STICKY NAVBAR
           =================================================================== */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#0B0F17]/85 border-b border-slate-800/80 transition-all duration-300">
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#0B0F17]/90 border-b border-slate-800/80 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           
           {/* Logo / Name */}
@@ -633,14 +633,16 @@ export default function App() {
             href="#hero"
             className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-lg p-1"
           >
-            <div className="w-10 h-10 rounded-xl overflow-hidden border border-emerald-500/40 shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-300">
-              <img src={PORTFOLIO_CONFIG.personal.portraitUrl} alt="Portrait" className="w-full h-full object-cover" />
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden border border-emerald-500/40 shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-300">
+              <img src={PORTFOLIO_CONFIG.personal.portraitUrl} alt="Mainuddin Khudavand" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-slate-100 group-hover:text-emerald-400 transition-colors text-sm sm:text-base tracking-tight flex items-center gap-1.5">
+              <span className="font-bold text-slate-100 group-hover:text-emerald-400 transition-colors text-sm sm:text-base tracking-tight">
                 {PORTFOLIO_CONFIG.personal.name}
               </span>
-              <span className="text-[10px] text-emerald-400 font-mono tracking-wider">AI/ML & MERN Engineer</span>
+              <span className="text-[10px] sm:text-[11px] text-emerald-400 font-mono tracking-wider">
+                Full-Stack & AI Engineer
+              </span>
             </div>
           </a>
 
@@ -669,7 +671,7 @@ export default function App() {
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-xs font-semibold text-slate-200 border border-slate-700/80 hover:border-emerald-500/50 transition-all focus-visible:ring-2 focus-visible:ring-emerald-400 shadow-md hover:scale-105"
             >
               <Download className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Resume</span>
+              <span>Download CV</span>
             </a>
           </div>
 
@@ -677,7 +679,7 @@ export default function App() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle mobile menu"
-            className="md:hidden p-2 rounded-xl text-slate-400 hover:text-white bg-slate-900/80 border border-slate-800 focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="md:hidden p-2 rounded-xl text-slate-300 hover:text-white bg-slate-900/90 border border-slate-800 focus-visible:ring-2 focus-visible:ring-emerald-400 min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             {mobileMenuOpen ? <X className="w-6 h-6 text-emerald-400" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -691,7 +693,7 @@ export default function App() {
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                   activeSection === link.id
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-slate-300 hover:bg-slate-800/60'
@@ -704,7 +706,7 @@ export default function App() {
               <a
                 href={PORTFOLIO_CONFIG.personal.resumeUrl}
                 download
-                className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 text-white font-semibold text-sm shadow-md"
+                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 text-white font-semibold text-sm shadow-md"
               >
                 <Download className="w-4 h-4" />
                 Download Resume PDF
@@ -715,35 +717,35 @@ export default function App() {
       </header>
 
       {/* ===================================================================
-          2. HERO SECTION MATCHING THE REFERENCE STUDIO SETUP
+          2. HERO SECTION
           =================================================================== */}
-      <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex items-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+      <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex items-center py-10 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full">
           
-          {/* Left Column: Info & Bio */}
-          <div className="lg:col-span-6 space-y-6 text-left">
+          {/* Left Column: Info & Intro */}
+          <div className="lg:col-span-6 space-y-5 sm:space-y-6 text-left order-2 lg:order-1">
             
-            {/* Availability Badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900/90 border border-emerald-500/40 shadow-xl shadow-emerald-500/10 text-xs text-slate-200 font-medium">
+            {/* Greeting Badge */}
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-slate-900/90 border border-emerald-500/40 shadow-lg text-xs text-slate-200 font-medium">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
               <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Creative AI & Full Stack Developer • Open to Roles & Projects</span>
+              <span>👋 Welcome to my portfolio • Open for Opportunities</span>
             </div>
 
             {/* Headline */}
-            <div className="space-y-3">
-              <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                Mainuddin Khudavand
+            <div className="space-y-2.5">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Hi, I'm <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Mainuddin</span>
               </h1>
-              <p className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_10px_25px_rgba(16,185,129,0.3)]">
-                PORTFOLIO — Full Stack & AI/ML Engineer
+              <p className="text-lg sm:text-2xl font-bold text-slate-200">
+                {PORTFOLIO_CONFIG.personal.roleTitle}
               </p>
 
-              {/* Typewriter */}
-              <div className="h-10 flex items-center text-lg sm:text-xl font-mono text-slate-300">
+              {/* Dynamic Typewriter */}
+              <div className="h-9 sm:h-10 flex items-center text-base sm:text-xl font-mono text-slate-300">
                 <span className="text-emerald-400 mr-2">{PORTFOLIO_CONFIG.personal.taglinePrefix}</span>
                 <span className="text-white border-r-2 border-emerald-400 pr-1 animate-pulse min-h-[1.5em] inline-block font-semibold">
                   {typewriterText}
@@ -751,46 +753,46 @@ export default function App() {
               </div>
             </div>
 
-            {/* Short Narrative */}
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-xl">
+            {/* Value Proposition */}
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
               {PORTFOLIO_CONFIG.personal.valueProposition}
             </p>
 
-            {/* Workstation Dashboard Interactive Stats */}
+            {/* Key Quick Highlights */}
             <div className="grid grid-cols-2 gap-3 pt-1">
-              <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800 text-xs space-y-1">
+              <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800/90 text-xs space-y-1 shadow-md">
                 <div className="text-slate-400 font-mono text-[11px] flex items-center gap-1.5">
                   <BarChart3 className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>Academic Excellence</span>
+                  <span>Academic Record</span>
                 </div>
-                <div className="text-lg font-bold text-white font-mono">8.5 CGPA</div>
+                <div className="text-base sm:text-lg font-bold text-white font-mono">8.5 CGPA</div>
                 <div className="text-[10px] text-emerald-400 font-mono">B.E. Computer Science</div>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800 text-xs space-y-1">
+              <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800/90 text-xs space-y-1 shadow-md">
                 <div className="text-slate-400 font-mono text-[11px] flex items-center gap-1.5">
                   <FileCode className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>Patented Innovation</span>
+                  <span>Patent Filed</span>
                 </div>
-                <div className="text-lg font-bold text-white font-mono">1 Patent</div>
+                <div className="text-base sm:text-lg font-bold text-white font-mono">1 Patent</div>
                 <div className="text-[10px] text-cyan-400 font-mono">App #202641040564</div>
               </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
               <a
                 href="#contact"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold text-sm shadow-xl shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all transform hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-emerald-400 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold text-sm shadow-xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 min-h-[44px]"
               >
                 <Send className="w-4 h-4" />
-                <span>Contact Me</span>
+                <span>Get In Touch</span>
               </a>
 
               <a
                 href={PORTFOLIO_CONFIG.personal.resumeUrl}
                 download
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-sm border border-slate-700 hover:border-emerald-500/40 transition-all transform hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-emerald-400 flex items-center justify-center gap-2 shadow-lg"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-sm border border-slate-700 hover:border-emerald-500/40 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 shadow-lg min-h-[44px]"
               >
                 <Download className="w-4 h-4 text-emerald-400" />
                 <span>Download Resume</span>
@@ -799,57 +801,57 @@ export default function App() {
 
           </div>
 
-          {/* Right Column: REFERENCE-MATCHED STUDIO WORKSPACE SHOWCASE */}
-          <div className="lg:col-span-6 flex justify-center">
-            <TiltCard3D className="w-full max-w-lg p-6 relative group">
+          {/* Right Column: PORTRAIT CARD SHOWCASE */}
+          <div className="lg:col-span-6 flex justify-center order-1 lg:order-2">
+            <TiltCard3D className="w-full max-w-sm sm:max-w-md p-4 sm:p-6 relative group">
               
               {/* Studio Header Bar */}
-              <div className="translate-z-30 flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+              <div className="translate-z-30 flex items-center justify-between mb-3 sm:mb-4 border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2">
                   <Monitor className="w-4 h-4 text-emerald-400" />
                   <span className="text-xs font-mono font-bold text-slate-200">
-                    Developer Studio Setup
+                    Developer Studio
                   </span>
                 </div>
 
                 <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[10px] font-mono font-bold">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                  <span>System Active</span>
+                  <span>Active</span>
                 </div>
               </div>
 
-              {/* Main Portrait Frame matching the Reference Image */}
+              {/* Main Portrait Image */}
               <div className="translate-z-40 relative rounded-2xl overflow-hidden border-2 border-emerald-500/40 shadow-2xl shadow-emerald-500/20 group-hover:scale-[1.01] transition-transform duration-500">
                 <img
                   src={PORTFOLIO_CONFIG.personal.portraitUrl}
-                  alt="Mainuddin Khudavand Studio Portrait"
-                  className="w-full h-96 object-cover object-top filter brightness-105 contrast-105"
+                  alt="Mainuddin Khudavand"
+                  className="w-full h-72 sm:h-96 object-cover object-top filter brightness-105 contrast-105"
                 />
 
-                {/* Interactive UX/UI Screen Mockup Badge on Top Right */}
-                <div className="absolute top-3 right-3 p-3 rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-800 shadow-xl max-w-[180px] space-y-1.5 hidden sm:block">
+                {/* Live UX Badge Overlay */}
+                <div className="absolute top-3 right-3 p-2.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-800 shadow-xl max-w-[160px] space-y-1 hidden sm:block">
                   <div className="flex items-center justify-between text-[10px] font-mono text-emerald-400 font-bold">
-                    <span>UX Design Mockup</span>
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>MERN & AI Stack</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
                   </div>
                   <div className="space-y-1">
-                    <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
-                      <div className="w-3/4 h-full bg-emerald-400 rounded-full"></div>
+                    <div className="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                      <div className="w-4/5 h-full bg-emerald-400 rounded-full"></div>
                     </div>
-                    <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
-                      <div className="w-1/2 h-full bg-cyan-400 rounded-full"></div>
+                    <div className="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                      <div className="w-3/5 h-full bg-cyan-400 rounded-full"></div>
                     </div>
                   </div>
                 </div>
 
-                {/* Bottom Title Bar overlay */}
+                {/* Bottom Overlay Label */}
                 <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-slate-950/90 backdrop-blur-md border border-slate-800 flex items-center justify-between">
                   <div>
-                    <h3 className="text-sm font-bold text-white">Mainuddin Khudavand</h3>
-                    <p className="text-[11px] text-emerald-400 font-mono">Full Stack & AI Engineer</p>
+                    <h3 className="text-xs sm:text-sm font-bold text-white">Mainuddin Khudavand</h3>
+                    <p className="text-[10px] sm:text-[11px] text-emerald-400 font-mono">Full-Stack & AI Engineer</p>
                   </div>
-                  <div className="flex items-center gap-1 text-xs text-amber-400 font-mono font-bold px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/30">
-                    <Star className="w-3.5 h-3.5 fill-amber-400" />
+                  <div className="flex items-center gap-1 text-[11px] sm:text-xs text-amber-400 font-mono font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded bg-amber-500/10 border border-amber-500/30">
+                    <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400" />
                     <span>8.5 CGPA</span>
                   </div>
                 </div>
@@ -857,10 +859,10 @@ export default function App() {
 
               {/* Bottom Workstation Tech Badges */}
               <div className="translate-z-30 pt-4 flex flex-wrap justify-center gap-2">
-                <span className="px-3 py-1 rounded-xl bg-slate-900/90 text-emerald-300 border border-emerald-500/30 text-xs font-mono shadow-md">PyTorch</span>
-                <span className="px-3 py-1 rounded-xl bg-slate-900/90 text-sky-300 border border-sky-500/30 text-xs font-mono shadow-md">React.js</span>
-                <span className="px-3 py-1 rounded-xl bg-slate-900/90 text-cyan-300 border border-cyan-500/30 text-xs font-mono shadow-md">Agentic AI</span>
-                <span className="px-3 py-1 rounded-xl bg-slate-900/90 text-emerald-300 border border-emerald-500/30 text-xs font-mono shadow-md">MongoDB</span>
+                <span className="px-2.5 py-1 rounded-lg bg-slate-900/90 text-emerald-300 border border-emerald-500/30 text-[11px] font-mono shadow-md">PyTorch</span>
+                <span className="px-2.5 py-1 rounded-lg bg-slate-900/90 text-sky-300 border border-sky-500/30 text-[11px] font-mono shadow-md">React.js</span>
+                <span className="px-2.5 py-1 rounded-lg bg-slate-900/90 text-cyan-300 border border-cyan-500/30 text-[11px] font-mono shadow-md">Agentic AI</span>
+                <span className="px-2.5 py-1 rounded-lg bg-slate-900/90 text-emerald-300 border border-emerald-500/30 text-[11px] font-mono shadow-md">MongoDB</span>
               </div>
 
             </TiltCard3D>
@@ -870,58 +872,57 @@ export default function App() {
       </section>
 
       {/* ===================================================================
-          3. ABOUT SECTION WITH SKILL PROGRESS BARS & 3D STATS
+          3. ABOUT SECTION
           =================================================================== */}
-      <section id="about" className="py-20 border-t border-slate-800/60 relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="about" className="py-16 sm:py-20 border-t border-slate-800/60 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           
           {/* Section Header */}
-          <div className="text-center space-y-3">
+          <div className="text-center space-y-2.5">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">
               <User className="w-3.5 h-3.5" />
               About Me
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              AI & Product Engineering Specialist
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              A Little About Me
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
             
-            {/* Narrative Bio & Skill Progress */}
-            <div className="lg:col-span-7 space-y-6">
-              <TiltCard3D className="p-6 sm:p-8">
+            {/* Bio Card */}
+            <div className="lg:col-span-7">
+              <TiltCard3D className="p-5 sm:p-8 h-full flex flex-col justify-between">
                 <div className="space-y-4 translate-z-20">
-                  <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
                     <Sparkles className="w-5 h-5 text-emerald-400" />
-                    Bridging Research with High-Impact Applications
+                    Engineering Software That Works
                   </h3>
                   {PORTFOLIO_CONFIG.about.bio.map((paragraph, i) => (
-                    <p key={i} className="text-slate-300 leading-relaxed text-sm sm:text-base">
+                    <p key={i} className="text-slate-300 leading-relaxed text-xs sm:text-sm">
                       {paragraph}
                     </p>
                   ))}
-
                 </div>
               </TiltCard3D>
             </div>
 
-            {/* 3D Stats Cards Block */}
-            <div className="lg:col-span-5 grid grid-cols-2 gap-4">
+            {/* Stats Grid */}
+            <div className="lg:col-span-5 grid grid-cols-2 gap-3 sm:gap-4">
               {PORTFOLIO_CONFIG.about.stats.map((stat) => (
-                <TiltCard3D key={stat.id} className="p-5 flex flex-col justify-between h-full">
-                  <div className="translate-z-30 space-y-3">
+                <TiltCard3D key={stat.id} className="p-4 sm:p-5 flex flex-col justify-between h-full">
+                  <div className="translate-z-30 space-y-2.5">
                     <div className="flex items-center justify-between">
-                      <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shadow-md">
-                        <DynamicIcon name={stat.iconName} className="w-5 h-5" />
+                      <div className="p-2 sm:p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shadow-md">
+                        <DynamicIcon name={stat.iconName} className="w-4 h-4 sm:w-5 sm:h-5" />
                       </div>
-                      <span className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight text-emerald-400 drop-shadow-[0_4px_10px_rgba(16,185,129,0.3)]">
+                      <span className="text-xl sm:text-3xl font-extrabold text-white font-mono tracking-tight text-emerald-400">
                         {stat.value}
                       </span>
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-slate-100">{stat.label}</h4>
-                      <p className="text-[11px] text-slate-400 font-mono mt-0.5">{stat.detail}</p>
+                      <p className="text-[10px] sm:text-[11px] text-slate-400 font-mono mt-0.5">{stat.detail}</p>
                     </div>
                   </div>
                 </TiltCard3D>
@@ -934,30 +935,30 @@ export default function App() {
       </section>
 
       {/* ===================================================================
-          4. SKILLS SECTION WITH SIMPLE ELEGANT SKILL PILLS
+          4. SKILLS SECTION
           =================================================================== */}
-      <section id="skills" className="py-20 border-t border-slate-800/60 bg-slate-950/40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="skills" className="py-16 sm:py-20 border-t border-slate-800/60 bg-slate-950/40">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           
           {/* Header */}
-          <div className="text-center space-y-3">
+          <div className="text-center space-y-2.5">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">
               <Cpu className="w-3.5 h-3.5" />
-              Technical Mastery
+              Technical Skills
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Technologies & Frameworks
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Skills & Technologies
             </h2>
-            <p className="text-slate-400 text-sm max-w-xl mx-auto">
-              Categorized breakdown of machine learning frameworks, full-stack technologies, and cloud tools I specialize in.
+            <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
+              Technologies, frameworks, and tools I work with daily to build web platforms and AI systems.
             </p>
           </div>
 
           {/* Category Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2.5">
+          <div className="flex flex-wrap justify-center gap-2">
             <button
               onClick={() => setSelectedSkillCategory('all')}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-emerald-400 hover:scale-105 active:scale-95 ${
+              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all focus-visible:ring-2 focus-visible:ring-emerald-400 min-h-[40px] ${
                 selectedSkillCategory === 'all'
                   ? 'bg-emerald-500 text-black font-extrabold shadow-lg shadow-emerald-500/30'
                   : 'bg-slate-900/90 text-slate-300 hover:text-white border border-slate-800'
@@ -969,7 +970,7 @@ export default function App() {
               <button
                 key={cat.id}
                 onClick={() => setSelectedSkillCategory(cat.id)}
-                className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-emerald-400 hover:scale-105 active:scale-95 ${
+                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-emerald-400 min-h-[40px] ${
                   selectedSkillCategory === cat.id
                     ? 'bg-emerald-500 text-black font-extrabold shadow-lg shadow-emerald-500/30'
                     : 'bg-slate-900/90 text-slate-300 hover:text-white border border-slate-800'
@@ -982,29 +983,29 @@ export default function App() {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
             {PORTFOLIO_CONFIG.skills.categories
               .filter((cat) => selectedSkillCategory === 'all' || selectedSkillCategory === cat.id)
               .map((category) => (
-                <TiltCard3D key={category.id} className="p-6">
+                <TiltCard3D key={category.id} className="p-5 sm:p-6">
                   <div className="translate-z-20 space-y-4">
                     <div className="flex items-center gap-3 pb-3 border-b border-slate-800">
                       <div className="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                         <DynamicIcon name={category.iconName} className="w-5 h-5" />
                       </div>
-                      <h3 className="text-lg font-bold text-white">{category.name}</h3>
+                      <h3 className="text-base sm:text-lg font-bold text-white">{category.name}</h3>
                     </div>
 
-                    <div className="flex flex-wrap gap-2.5 pt-2">
+                    <div className="flex flex-wrap gap-2 pt-1">
                       {category.items.map((skill, idx) => (
                         <div
                           key={idx}
-                          className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950/90 border border-slate-800/90 hover:border-emerald-500/50 hover:bg-slate-900/80 transition-all duration-200 shadow-md group"
+                          className="flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-slate-950/90 border border-slate-800/90 hover:border-emerald-500/50 hover:bg-slate-900/80 transition-all duration-200 shadow-md group"
                         >
                           <span className="text-xs font-semibold text-slate-200 group-hover:text-emerald-300">
                             {skill.name}
                           </span>
-                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                          <span className="px-1.5 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                             {skill.badge || skill.level}
                           </span>
                         </div>
@@ -1019,48 +1020,48 @@ export default function App() {
       </section>
 
       {/* ===================================================================
-          5. PROJECTS SECTION WITH 3D PARALLAX CARDS
+          5. PROJECTS SECTION
           =================================================================== */}
-      <section id="projects" className="py-20 border-t border-slate-800/60">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="projects" className="py-16 sm:py-20 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           
           {/* Header */}
-          <div className="text-center space-y-3">
+          <div className="text-center space-y-2.5">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">
               <Briefcase className="w-3.5 h-3.5" />
               Featured Work
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Projects & Patented Innovations
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Featured Projects
             </h2>
-            <p className="text-slate-400 text-sm max-w-xl mx-auto">
-              Real-world systems spanning full-stack web applications, AI biometric security, and computer vision systems.
+            <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
+              Selection of applications I've built, featuring a government-filed patent platform and live AI systems.
             </p>
           </div>
 
           {/* Project Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {PORTFOLIO_CONFIG.projects.map((project) => (
-              <TiltCard3D key={project.id} className="p-6 flex flex-col justify-between h-full">
+              <TiltCard3D key={project.id} className="p-5 sm:p-6 flex flex-col justify-between h-full">
                 <div className="translate-z-30 space-y-4">
                   
                   {/* Top Badge */}
                   <div className="flex items-center justify-between">
-                    <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[11px] font-mono font-semibold shadow-sm">
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[10px] sm:text-[11px] font-mono font-semibold shadow-sm">
                       {project.badge}
                     </span>
-                    <span className="text-[11px] text-slate-400 font-mono">{project.category}</span>
+                    <span className="text-[10px] sm:text-[11px] text-slate-400 font-mono">{project.category}</span>
                   </div>
 
                   {/* Title & Description */}
-                  <div className="space-y-2.5">
-                    <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">
+                  <div className="space-y-2">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
                       {project.title}
                     </h3>
                     <p className="text-xs font-medium text-emerald-300 font-mono">
                       {project.subtitle}
                     </p>
-                    <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {project.description}
                     </p>
                   </div>
@@ -1086,12 +1087,12 @@ export default function App() {
                 </div>
 
                 {/* Action Links */}
-                <div className="translate-z-40 flex items-center gap-3 pt-6 mt-4 border-t border-slate-800/80">
+                <div className="translate-z-40 flex items-center gap-3 pt-5 mt-4 border-t border-slate-800/80">
                   <a
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2.5 px-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-lg hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-emerald-400"
+                    className="flex-1 py-2.5 px-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-md active:scale-95 min-h-[40px]"
                   >
                     <span>Live Demo</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -1101,7 +1102,7 @@ export default function App() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 hover:border-emerald-500/40 transition-all hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-emerald-400"
+                    className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-all active:scale-95 min-h-[40px] min-w-[40px] flex items-center justify-center"
                     aria-label="View Source Code on GitHub"
                   >
                     <Github className="w-4 h-4" />
@@ -1115,37 +1116,37 @@ export default function App() {
       </section>
 
       {/* ===================================================================
-          6. EXPERIENCE SECTION WITH 3D TIMELINE CARDS
+          6. EXPERIENCE SECTION
           =================================================================== */}
-      <section id="experience" className="py-20 border-t border-slate-800/60 bg-slate-950/40">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="experience" className="py-16 sm:py-20 border-t border-slate-800/60 bg-slate-950/40">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           
           {/* Header */}
-          <div className="text-center space-y-3">
+          <div className="text-center space-y-2.5">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">
               <GraduationCap className="w-3.5 h-3.5" />
-              Career & Achievements
+              Background
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
               Experience & Education
             </h2>
           </div>
 
           {/* Timeline Container */}
-          <div className="relative pl-6 sm:pl-8 border-l-2 border-slate-800 space-y-10">
+          <div className="relative pl-5 sm:pl-8 border-l-2 border-slate-800 space-y-8 sm:space-y-10">
             {PORTFOLIO_CONFIG.experience.map((item, index) => (
               <div key={index} className="relative group">
                 
-                {/* Timeline Pulse Indicator */}
-                <div className="absolute -left-[31px] sm:-left-[39px] top-4 w-4 h-4 rounded-full bg-slate-950 border-2 border-emerald-500 group-hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/50"></div>
+                {/* Timeline Node */}
+                <div className="absolute -left-[27px] sm:-left-[39px] top-4 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-slate-950 border-2 border-emerald-500 group-hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/50"></div>
 
-                <TiltCard3D className="p-6">
-                  <div className="translate-z-20 space-y-3">
+                <TiltCard3D className="p-5 sm:p-6">
+                  <div className="translate-z-20 space-y-2.5">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                      <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                      <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
                         {item.role}
                       </h3>
-                      <span className="px-3 py-1 rounded-full bg-slate-800 text-emerald-300 font-mono text-xs w-fit border border-slate-700">
+                      <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-emerald-300 font-mono text-[11px] sm:text-xs w-fit border border-slate-700">
                         {item.period}
                       </span>
                     </div>
@@ -1170,37 +1171,37 @@ export default function App() {
       </section>
 
       {/* ===================================================================
-          7. CONTACT SECTION WITH 3D FORM & SIDEBAR
+          7. CONTACT SECTION
           =================================================================== */}
-      <section id="contact" className="py-20 border-t border-slate-800/60 relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="contact" className="py-16 sm:py-20 border-t border-slate-800/60 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           
           {/* Header */}
-          <div className="text-center space-y-3">
+          <div className="text-center space-y-2.5">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">
               <Mail className="w-3.5 h-3.5" />
-              Get In Touch
+              Contact
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Let's Build Something Together
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Let's Connect
             </h2>
-            <p className="text-slate-400 text-sm max-w-xl mx-auto">
-              Have an exciting project, role, or collaboration in mind? Send a message directly or connect via social links below.
+            <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
+              Interested in working together, hiring, or discussing a project? Drop a message below or email me directly.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
             
-            {/* Direct Contact Info Sidebar */}
+            {/* Contact Info Sidebar */}
             <div className="lg:col-span-5">
-              <TiltCard3D className="p-6 sm:p-8 h-full">
-                <div className="translate-z-20 space-y-6">
-                  <h3 className="text-lg font-bold text-white flex items-center gap-2">
+              <TiltCard3D className="p-5 sm:p-8 h-full">
+                <div className="translate-z-20 space-y-5">
+                  <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
                     <MessageSquare className="w-5 h-5 text-emerald-400" />
-                    Contact Information
+                    Direct Contact
                   </h3>
 
-                  <div className="space-y-4 text-xs sm:text-sm">
+                  <div className="space-y-3.5 text-xs sm:text-sm">
                     
                     {/* Email */}
                     <a
@@ -1210,9 +1211,9 @@ export default function App() {
                       <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform">
                         <Mail className="w-4 h-4" />
                       </div>
-                      <div>
-                        <div className="text-slate-400 text-[11px]">Email</div>
-                        <div className="text-slate-200 font-mono font-medium group-hover:text-emerald-300">
+                      <div className="overflow-hidden">
+                        <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">Email</div>
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 truncate">
                           {PORTFOLIO_CONFIG.personal.email}
                         </div>
                       </div>
@@ -1227,8 +1228,8 @@ export default function App() {
                         <Phone className="w-4 h-4" />
                       </div>
                       <div>
-                        <div className="text-slate-400 text-[11px]">Phone</div>
-                        <div className="text-slate-200 font-mono font-medium group-hover:text-emerald-300">
+                        <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">Phone</div>
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300">
                           {PORTFOLIO_CONFIG.personal.phone}
                         </div>
                       </div>
@@ -1245,9 +1246,9 @@ export default function App() {
                         <Github className="w-4 h-4" />
                       </div>
                       <div>
-                        <div className="text-slate-400 text-[11px]">GitHub</div>
-                        <div className="text-slate-200 font-mono font-medium group-hover:text-emerald-300 flex items-center gap-1">
-                          <span>GitHub Repositories</span>
+                        <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">GitHub</div>
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 flex items-center gap-1">
+                          <span>github.com/mainuddinkhudavand</span>
                           <ArrowUpRight className="w-3 h-3" />
                         </div>
                       </div>
@@ -1264,9 +1265,9 @@ export default function App() {
                         <Linkedin className="w-4 h-4" />
                       </div>
                       <div>
-                        <div className="text-slate-400 text-[11px]">LinkedIn</div>
-                        <div className="text-slate-200 font-mono font-medium group-hover:text-emerald-300 flex items-center gap-1">
-                          <span>Connect on LinkedIn</span>
+                        <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">LinkedIn</div>
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 flex items-center gap-1">
+                          <span>linkedin.com/in/mainuddinkhudavand</span>
                           <ArrowUpRight className="w-3 h-3" />
                         </div>
                       </div>
@@ -1277,9 +1278,9 @@ export default function App() {
               </TiltCard3D>
             </div>
 
-            {/* Contact Form 3D Container */}
+            {/* Contact Form */}
             <div className="lg:col-span-7">
-              <TiltCard3D className="p-6 sm:p-8">
+              <TiltCard3D className="p-5 sm:p-8">
                 <form onSubmit={handleFormSubmit} className="translate-z-20 space-y-4">
                   
                   {/* Form Banners */}
@@ -1287,9 +1288,9 @@ export default function App() {
                     <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm flex items-start gap-3 animate-in fade-in">
                       <CheckCircle2 className="w-5 h-5 flex-shrink-0 text-emerald-400" />
                       <div>
-                        <p className="font-bold">Message Submission Received!</p>
+                        <p className="font-bold">Message Sent!</p>
                         <p className="text-emerald-300/80 text-xs mt-0.5">
-                          {formStatus.message || "Thank you! Your message has been sent successfully. I will get back to you soon."}
+                          {formStatus.message || "Thank you for reaching out. I'll get back to you soon!"}
                         </p>
                       </div>
                     </div>
@@ -1299,7 +1300,7 @@ export default function App() {
                     <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs sm:text-sm flex items-start gap-3 animate-in fade-in">
                       <AlertCircle className="w-5 h-5 flex-shrink-0 text-rose-400" />
                       <div>
-                        <p className="font-bold">Validation Alert</p>
+                        <p className="font-bold">Input Error</p>
                         <p className="text-rose-300/80 text-xs mt-0.5">{formStatus.error}</p>
                       </div>
                     </div>
@@ -1317,9 +1318,9 @@ export default function App() {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        placeholder="e.g. Alex Morgan"
+                        placeholder="Alex Morgan"
                         required
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all min-h-[44px]"
                       />
                     </div>
 
@@ -1335,7 +1336,7 @@ export default function App() {
                         onChange={handleInputChange}
                         placeholder="alex@example.com"
                         required
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all min-h-[44px]"
                       />
                     </div>
                   </div>
@@ -1343,15 +1344,15 @@ export default function App() {
                   {/* Subject */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold text-slate-300">
-                      Subject / Topic
+                      Subject
                     </label>
                     <input
                       type="text"
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      placeholder="e.g. AI Collaboration / Hiring Inquiry"
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all"
+                      placeholder="Project Opportunity / Hello"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all min-h-[44px]"
                     />
                   </div>
 
@@ -1366,9 +1367,9 @@ export default function App() {
                       rows="4"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Hi Mainuddin, I would like to discuss..."
+                      placeholder="Hi Mainuddin, I saw your portfolio and would like to connect..."
                       required
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 text-xs sm:text-sm focus:border-emerald-500 focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none transition-all resize-none min-h-[100px]"
                     ></textarea>
                   </div>
 
@@ -1376,7 +1377,7 @@ export default function App() {
                   <button
                     type="submit"
                     disabled={formStatus.submitting}
-                    className="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 transition-all hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-emerald-400 disabled:opacity-50"
+                    className="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all hover:scale-[1.02] active:scale-95 focus-visible:ring-2 focus-visible:ring-emerald-400 disabled:opacity-50 min-h-[44px]"
                   >
                     {formStatus.submitting ? (
                       <div className="flex items-center gap-2">
@@ -1407,8 +1408,8 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           
           {/* Left copyright */}
-          <div className="flex items-center gap-2">
-            <span>© {new Date().getFullYear()} {PORTFOLIO_CONFIG.personal.name}. All rights reserved.</span>
+          <div className="flex items-center gap-2 text-center sm:text-left">
+            <span>© {new Date().getFullYear()} {PORTFOLIO_CONFIG.personal.name}. Built with React & Node.js.</span>
           </div>
 
           {/* Social Icons */}
@@ -1417,7 +1418,7 @@ export default function App() {
               href={PORTFOLIO_CONFIG.personal.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400"
+              className="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400 min-h-[40px] min-w-[40px] flex items-center justify-center"
               aria-label="GitHub Profile"
             >
               <Github className="w-4 h-4" />
@@ -1426,14 +1427,14 @@ export default function App() {
               href={PORTFOLIO_CONFIG.personal.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400"
+              className="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400 min-h-[40px] min-w-[40px] flex items-center justify-center"
               aria-label="LinkedIn Profile"
             >
               <Linkedin className="w-4 h-4" />
             </a>
             <a
               href={`mailto:${PORTFOLIO_CONFIG.personal.email}`}
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400"
+              className="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400 min-h-[40px] min-w-[40px] flex items-center justify-center"
               aria-label="Send Email"
             >
               <Mail className="w-4 h-4" />
