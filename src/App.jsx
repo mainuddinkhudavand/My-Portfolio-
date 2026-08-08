@@ -149,7 +149,7 @@ export const PORTFOLIO_CONFIG = {
       impact: "Patent Published (#202641040564) • 5 Role Dashboards • Automated Email Alerts",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Nodemailer"],
       liveDemo: "https://empowering-villages-through-digital-6r80.onrender.com",
-      github: "https://github.com/mainuddinkhudavand/digital-governance-mern",
+      github: "https://github.com/mainuddinkhudavand/Empowering-Villages-Through-Digital-Governance.git",
       category: "Full Stack MERN",
       badge: "Patent Published"
     },
@@ -161,7 +161,7 @@ export const PORTFOLIO_CONFIG = {
       impact: "Dual-Factor Biometric Security • QR Registration • Student & Teacher Dashboards",
       tags: ["Python", "Flask", "Streamlit", "Supabase", "Scikit-Learn", "OpenCV", "Resemblyzer"],
       liveDemo: "https://ai-attendance-project-landing-main1-1.onrender.com",
-      github: "https://github.com/mainuddinkhudavand/ai-attendance-system",
+      github: "https://github.com/mainuddinkhudavand/ai-attendance-project-landing-main1.git",
       category: "AI & Biometrics",
       badge: "Dual Biometric Auth"
     },
@@ -173,7 +173,7 @@ export const PORTFOLIO_CONFIG = {
       impact: "Sub-100ms Form Analysis • Voice Feedback • WebRTC Real-Time Stream",
       tags: ["Python", "Streamlit", "WebRTC", "MediaPipe", "OpenCV", "Groq LLM", "gTTS"],
       liveDemo: "https://ai-gym-trainer-landing-page.onrender.com",
-      github: "https://github.com/mainuddinkhudavand/realtime-ai-gym-trainer",
+      github: "https://github.com/mainuddinkhudavand/Real-Time-AI-Gym-Trainer.git",
       category: "Vision & LLMs",
       badge: "Real-Time Vision"
     }
