@@ -136,12 +136,12 @@ app.get('/api/messages', async (req, res) => {
   }
 });
 
-// SPA Fallback for all non-API GET requests
-app.get('*', (req, res) => {
-  if (req.path.startsWith('/api')) {
-    return res.status(404).json({ error: 'API endpoint not found' });
+// SPA Fallback for all non-API GET requests (Express 4 & 5 / Node 24 compatible)
+app.use((req, res, next) => {
+  if (req.method === 'GET' && !req.path.startsWith('/api')) {
+    return res.sendFile(path.join(__dirname, 'dist', 'index.html'));
   }
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  next();
 });
 
 app.listen(PORT, () => {
