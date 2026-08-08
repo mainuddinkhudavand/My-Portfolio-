@@ -54,6 +54,7 @@ export const PORTFOLIO_CONFIG = {
     name: "Mainuddin Khudavand",
     shortName: "Mainuddin.K",
     portraitUrl: "/mainuddin_portrait.jpg",
+    headerPortraitUrl: "/mainuddin_header_portrait.jpg",
     roleTitle: "Full-Stack Developer & AI/ML Engineer",
     taglinePrefix: "I build ",
     taglines: [
@@ -634,7 +635,7 @@ export default function App() {
             className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-lg p-1"
           >
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden border border-emerald-500/40 shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-300">
-              <img src={PORTFOLIO_CONFIG.personal.portraitUrl} alt="Mainuddin Khudavand" className="w-full h-full object-cover" />
+              <img src={PORTFOLIO_CONFIG.personal.headerPortraitUrl} alt="Mainuddin Khudavand" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-slate-100 group-hover:text-emerald-400 transition-colors text-sm sm:text-base tracking-tight">
