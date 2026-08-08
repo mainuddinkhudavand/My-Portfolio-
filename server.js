@@ -3,14 +3,22 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
 import mongoose from 'mongoose';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
+
+// Serve static frontend assets built by Vite
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // ============================================================================
 // 1. MONGODB ATLAS CONNECTION & MODEL
@@ -108,7 +116,6 @@ app.post('/api/contact', async (req, res) => {
       console.log('⚠️ Message saved to MongoDB Atlas. (Set SMTP_PASS in .env to also receive Gmail copy)');
     }
 
-    // Clean user-facing success response (no technical/debug leaks)
     return res.status(200).json({
       success: true,
       message: 'Thank you! Your message has been sent successfully. Mainuddin will get back to you soon.'
@@ -127,6 +134,14 @@ app.get('/api/messages', async (req, res) => {
   } catch (err) {
     return res.status(500).json({ error: err.message });
   }
+});
+
+// SPA Fallback for all non-API GET requests
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api')) {
+    return res.status(404).json({ error: 'API endpoint not found' });
+  }
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
