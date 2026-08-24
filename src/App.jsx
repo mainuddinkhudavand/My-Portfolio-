@@ -53,7 +53,7 @@ export const PORTFOLIO_CONFIG = {
   personal: {
     name: "Mainuddin Khudavand",
     shortName: "Mainuddin.K",
-    portraitUrl: "/mainuddin_portrait.jpg",
+    portraitUrl: "/mainuddin_header_portrait.jpg",
     headerPortraitUrl: "/mainuddin_header_portrait.jpg",
     roleTitle: "Full-Stack Developer & AI/ML Engineer",
     taglinePrefix: "I build ",
@@ -134,8 +134,7 @@ export const PORTFOLIO_CONFIG = {
           { name: "Git & GitHub", level: "Advanced", badge: "VCS" },
           { name: "Docker", level: "Intermediate", badge: "DevOps" },
           { name: "Render & Vercel", level: "Advanced", badge: "Deployment" },
-          { name: "Postman API Testing", level: "Advanced", badge: "Tooling" },
-          { name: "Jest Unit Testing", level: "Intermediate", badge: "Testing" }
+          { name: "API Testing", level: "Advanced", badge: "Tooling" }
         ]
       }
     ]
@@ -620,8 +619,8 @@ export default function App() {
       <ThreeCanvasBackground />
 
       {/* Ambient Gradient Flares */}
-      <div className="fixed top-0 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
-      <div className="fixed bottom-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '4s' }}></div>
+      <div className="fixed top-0 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div className="fixed bottom-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
       {/* ===================================================================
           1. STICKY NAVBAR
@@ -729,7 +728,6 @@ export default function App() {
             {/* Greeting Badge */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-slate-900/90 border border-emerald-500/40 shadow-lg text-xs text-slate-200 font-medium">
               <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
               <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
@@ -816,7 +814,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[10px] font-mono font-bold">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                   <span>Active</span>
                 </div>
               </div>
@@ -833,7 +831,7 @@ export default function App() {
                 <div className="absolute top-3 right-3 p-2.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-800 shadow-xl max-w-[160px] space-y-1 hidden sm:block">
                   <div className="flex items-center justify-between text-[10px] font-mono text-emerald-400 font-bold">
                     <span>MERN & AI Stack</span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                   </div>
                   <div className="space-y-1">
                     <div className="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
@@ -1207,12 +1205,12 @@ export default function App() {
                     {/* Email */}
                     <a
                       href={`mailto:${PORTFOLIO_CONFIG.personal.email}`}
-                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group min-w-0"
                     >
-                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform">
+                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
                         <Mail className="w-4 h-4" />
                       </div>
-                      <div className="overflow-hidden">
+                      <div className="min-w-0 flex-1">
                         <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">Email</div>
                         <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 truncate">
                           {PORTFOLIO_CONFIG.personal.email}
@@ -1223,14 +1221,14 @@ export default function App() {
                     {/* Phone */}
                     <a
                       href={`tel:${PORTFOLIO_CONFIG.personal.phone}`}
-                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group min-w-0"
                     >
-                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform">
+                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
                         <Phone className="w-4 h-4" />
                       </div>
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">Phone</div>
-                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300">
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 truncate">
                           {PORTFOLIO_CONFIG.personal.phone}
                         </div>
                       </div>
@@ -1241,16 +1239,16 @@ export default function App() {
                       href={PORTFOLIO_CONFIG.personal.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group min-w-0"
                     >
-                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform">
+                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
                         <Github className="w-4 h-4" />
                       </div>
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">GitHub</div>
-                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 flex items-center gap-1">
-                          <span>github.com/mainuddinkhudavand</span>
-                          <ArrowUpRight className="w-3 h-3" />
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 flex items-center gap-1 min-w-0">
+                          <span className="truncate">github.com/mainuddinkhudavand</span>
+                          <ArrowUpRight className="w-3 h-3 flex-shrink-0" />
                         </div>
                       </div>
                     </a>
@@ -1260,16 +1258,16 @@ export default function App() {
                       href={PORTFOLIO_CONFIG.personal.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/40 transition-colors group min-w-0"
                     >
-                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform">
+                      <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
                         <Linkedin className="w-4 h-4" />
                       </div>
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <div className="text-slate-400 text-[10px] uppercase font-mono tracking-wider">LinkedIn</div>
-                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 flex items-center gap-1">
-                          <span>linkedin.com/in/mainuddinkhudavand</span>
-                          <ArrowUpRight className="w-3 h-3" />
+                        <div className="text-slate-200 font-mono text-xs sm:text-sm font-medium group-hover:text-emerald-300 flex items-center gap-1 min-w-0">
+                          <span className="truncate">linkedin.com/in/mainuddinkhudavand</span>
+                          <ArrowUpRight className="w-3 h-3 flex-shrink-0" />
                         </div>
                       </div>
                     </a>
