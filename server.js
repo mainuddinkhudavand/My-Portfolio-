@@ -136,13 +136,33 @@ app.get('/api/messages', async (req, res) => {
   }
 });
 
+// Dedicated route for resume PDF download with proper Content-Type & Content-Disposition
+app.get(['/Mainuddin_Khudavand_Resume.pdf', '/api/resume'], (req, res) => {
+  const publicPath = path.join(__dirname, 'public', 'Mainuddin_Khudavand_Resume.pdf');
+  const distPath = path.join(__dirname, 'dist', 'Mainuddin_Khudavand_Resume.pdf');
+  const rootPath = path.join(__dirname, 'Mainuddin_Khudavand_Resume.pdf');
+
+  let filePath = null;
+  if (fs.existsSync(publicPath)) filePath = publicPath;
+  else if (fs.existsSync(distPath)) filePath = distPath;
+  else if (fs.existsSync(rootPath)) filePath = rootPath;
+
+  if (filePath) {
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename="Mainuddin_Khudavand_Resume.pdf"');
+    return res.sendFile(filePath);
+  }
+  return res.status(404).send('Resume PDF file not found.');
+});
+
 // SPA Fallback for all non-API GET requests (Express 4 & 5 / Node 24 compatible)
 app.use((req, res, next) => {
-  if (req.method === 'GET' && !req.path.startsWith('/api')) {
+  if (req.method === 'GET' && !req.path.startsWith('/api') && !req.path.endsWith('.pdf')) {
     return res.sendFile(path.join(__dirname, 'dist', 'index.html'));
   }
   next();
 });
+
 
 app.listen(PORT, () => {
   console.log(`🚀 Portfolio Server running on http://localhost:${PORT}`);
